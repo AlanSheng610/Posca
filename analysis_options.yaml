@@ -1,0 +1,14 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - packages/**
+    - lib/firebase_options.dart
+
+linter:
+  rules:
+    - prefer_single_quotes
+    - prefer_final_fields
+    - prefer_final_locals
+    - require_trailing_commas
+    - sort_child_properties_last

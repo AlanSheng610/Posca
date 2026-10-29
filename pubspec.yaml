@@ -1,0 +1,55 @@
+name: posca
+description: "Posca — send photo postcards to strangers around the world."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Backend
+  firebase_core: ^2.25.4
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.5
+  firebase_storage: ^11.6.6
+
+  # State management & routing
+  get: ^4.6.6
+
+  # Camera, image & location
+  camerawesome: ^2.0.0+1
+  image_cropper: ^5.0.1
+  palette_generator: ^0.3.3+3
+  cached_network_image: ^3.3.1
+  geolocator: ^11.0.0
+  geocoding: 2.1.1
+
+  # Avatars (vendored with a SafeArea fix, see README)
+  fluttermoji:
+    path: packages/fluttermoji
+  flutter_svg: ^2.0.10
+
+  # UI
+  cupertino_icons: ^1.0.2
+  intl: ^0.18.1
+  carousel_slider: ^4.2.1
+  expandable_text: ^2.3.0
+  bottom_picker: ^2.4.0
+  flutter_multi_select_items: ^0.4.2
+  auto_animated_list: ^1.0.4
+  fuzzy: ^0.5.1
+  defer_pointer: ^0.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
